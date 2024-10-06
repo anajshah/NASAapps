@@ -22,7 +22,7 @@ struct badgepage: View {
                 Text("BADGES")
                     .offset(y:-260)
                     .font(.custom("Arial-bold", fixedSize: 60))
-                    .foregroundColor(Color.init(red: 0.26, green: 0.16, blue: 0.052))
+                    .foregroundColor(Color.init(red: 1.0, green: 1.0, blue: 1.0))
                     .multilineTextAlignment(.center)
 
                 NavigationLink(destination: skypage().navigationBarBackButtonHidden(true)){

@@ -1,8 +1,15 @@
+//
+//  ContentView.swift
+//  NASAapps
+//
+//  Created by Sarah Ngai on 10/6/24.
+//
+
 import SwiftUI
 
 struct Lesson1: View {
     var body: some View {
-        NavigationView{
+        NavigationView {
             ZStack {
                 Image("skyBadgeBackground")
                     .resizable()
@@ -16,6 +23,7 @@ struct Lesson1: View {
                         .foregroundColor(Color.white)
                         .offset(y: -20)
                         .multilineTextAlignment(.center)
+                    
                     Text("""
                     The Sky Badge
                     The sky is a masterpiece. Every day it graces us with living art, whether through a glorious sunset, shifting cloud formations, or the stunning display of night stars. No wonder we take every opportunity to spend time outdoors. Our world is a stage, and the sky performs with beauty, wonder, and mystery.
@@ -25,7 +33,7 @@ struct Lesson1: View {
                     .background(Color(red: 200/255, green: 214/255, blue: 226/255))
                     .cornerRadius(10)
                     .padding(.horizontal, 10.0)
-                    .offset(y:-30)
+                    .offset(y: -30)
                     
                     Text("""
                     Plankton, Aerosol, Cloud, ocean Ecosystem (PACE)
@@ -36,28 +44,27 @@ struct Lesson1: View {
                     .background(Color(red: 200/255, green: 214/255, blue: 226/255))
                     .cornerRadius(10)
                     .padding(.horizontal, 10.0)
-                    .offset(y:-30)
-
+                    .offset(y: -30)
                 }
                 .padding(.top, 50)
                 
-                NavigationLink(destination: Lesson2().navigationBarBackButtonHidden(true)){
+                NavigationLink(destination: Lesson2().navigationBarBackButtonHidden(true)) {
                     Image("next")
                         .padding()
                         .foregroundColor(Color.white)
                         .background(Color(red: 200/255, green: 214/255, blue: 226/255))
                         .cornerRadius(50)
                 }
-                .offset(x:140, y:370)
+                .offset(x: 140, y: 370)
                 
-                NavigationLink(destination: skypage().navigationBarBackButtonHidden(true)){
+                NavigationLink(destination: skypage().navigationBarBackButtonHidden(true)) {
                     Image("back")
                         .padding()
                         .foregroundColor(Color.white)
                         .background(Color(red: 200/255, green: 214/255, blue: 226/255))
                         .cornerRadius(50)
                 }
-                .offset(x:-140, y:370)
+                .offset(x: -140, y: 370)
             }
         }
     }
